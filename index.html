@@ -2,35 +2,43 @@
 <html>
 <head>
     <title>Birthday Surprise</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="text-align:center; font-family:Arial; background-color:#ffe6f2;">
 
-    <h1>🔐 Secret Birthday Page</h1>
+<body>
 
-    <p>Enter the Secret PIN</p>
+<div class="container">
 
-    <input type="password" id="pin" placeholder="Enter PIN">
+<h1>🔐 Secret Birthday Page</h1>
 
-    <br><br>
+<p>Enter the Secret PIN</p>
 
-    <button onclick="checkPin()">Submit</button>
+<input type="password" id="pin" placeholder="Enter PIN">
 
-    <h2 id="message"></h2>
+<br><br>
 
-    <script>
-        function checkPin() {
-            let pin = document.getElementById("pin").value;
+<button onclick="checkPin()">Submit</button>
 
-            if(pin == "127") {
-                document.getElementById("message").innerHTML =
-                "🎉 Happy Birthday, my darlinguuuu! 🎂";
-            }
-            else {
-                document.getElementById("message").innerHTML =
-                "❌ Wrong PIN";
-            }
-        }
-    </script>
+<h2 id="message"></h2>
+
+</div>
+
+<script>
+
+function checkPin(){
+
+let pin=document.getElementById("pin").value;
+
+if(pin=="143"){
+document.getElementById("message").innerHTML="🎉 Happy Birthday 🎂";
+}
+else{
+document.getElementById("message").innerHTML="❌ Wrong PIN";
+}
+
+}
+
+</script>
 
 </body>
 </html>
