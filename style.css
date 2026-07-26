@@ -66,3 +66,17 @@ font-size:130px;
 margin:30px;
 animation:float 2s infinite;
 }
+#birthdayContent{
+    display:none;
+}
+
+#welcome{
+    font-family:'Great Vibes', cursive;
+    font-size:70px;
+    color:#d8b4ff;
+}
+
+#loading{
+    color:#ffffff;
+    font-size:20px;
+}
