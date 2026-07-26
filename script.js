@@ -9,3 +9,12 @@ function checkPin() {
     }
 
 }
+setTimeout(function(){
+
+    document.getElementById("welcome").style.display="none";
+
+    document.getElementById("loading").style.display="none";
+
+    document.getElementById("birthdayContent").style.display="block";
+
+},3000);
