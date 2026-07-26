@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Birthday Surprise</title>
+</head>
+<body style="text-align:center; font-family:Arial; background-color:#ffe6f2;">
+
+    <h1>🔐 Secret Birthday Page</h1>
+
+    <p>Enter the Secret PIN</p>
+
+    <input type="password" id="pin" placeholder="Enter PIN">
+
+    <br><br>
+
+    <button onclick="checkPin()">Submit</button>
+
+    <h2 id="message"></h2>
+
+    <script>
+        function checkPin() {
+            let pin = document.getElementById("pin").value;
+
+            if(pin == "127") {
+                document.getElementById("message").innerHTML =
+                "🎉 Happy Birthday, my darlinguuuu! 🎂";
+            }
+            else {
+                document.getElementById("message").innerHTML =
+                "❌ Wrong PIN";
+            }
+        }
+    </script>
+
+</body>
+</html>
