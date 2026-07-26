@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Birthday Surprise</title>
     <link rel="stylesheet" href="style.css">
@@ -9,36 +10,22 @@
 
 <div class="container">
 
-<h1>🔐 Secret Birthday Page</h1>
+    <h1>🔐 Secret Birthday Page</h1>
 
-<p>Enter the Secret PIN</p>
+    <p>Enter the Secret PIN</p>
 
-<input type="password" id="pin" placeholder="Enter PIN">
+    <input type="password" id="pin" placeholder="Enter PIN">
 
-<br><br>
+    <br><br>
 
-<button onclick="checkPin()">Submit</button>
+    <button onclick="checkPin()">Submit</button>
 
-<h2 id="message"></h2>
+    <h2 id="message"></h2>
 
 </div>
 
-<script>
-
-function checkPin(){
-
-let pin=document.getElementById("pin").value;
-
-if(pin=="127"){
-window.location.href="birthday.html";
-}
-else{
-document.getElementById("message").innerHTML="❌ Wrong PIN";
-}
-
-}
-
-</script>
+<script src="script.js"></script>
 
 </body>
+
 </html>
