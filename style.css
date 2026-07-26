@@ -3,7 +3,7 @@ body{
     padding:0;
     background:#0d0d0d;
     color:white;
-    font-family:Arial,sans-serif;
+    font-family:'Poppins',sans-serif;
 }
 
 .container{
@@ -13,7 +13,9 @@ body{
 
 h1{
     color:#d8b4ff;
-    font-size:50px;
+    font-size:70px;
+    font-family:'Great Vibes', cursive;
+    text-shadow:0 0 20px #b57edc;
 }
 
 h2{
