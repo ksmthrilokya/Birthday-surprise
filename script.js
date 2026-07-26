@@ -17,4 +17,23 @@ setTimeout(function(){
 
     document.getElementById("birthdayContent").style.display="block";
 
+    typeWriter();
+
 },3000);
+let text = "🎉 Happy Birthday Raji 💜";
+
+let index = 0;
+
+function typeWriter(){
+
+    if(index < text.length){
+
+        document.getElementById("birthdayText").innerHTML += text.charAt(index);
+
+        index++;
+
+        setTimeout(typeWriter,150);
+
+    }
+
+}
