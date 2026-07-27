@@ -1,14 +1,47 @@
 body{
     margin:0;
     padding:0;
-    background:#0d0d0d;
+    min-height:100vh;
+    overflow-x:hidden;
+
+    background:
+    radial-gradient(circle at top,
+    rgba(181,126,220,0.30),
+    transparent 35%),
+
+    radial-gradient(circle at bottom right,
+    rgba(216,180,255,0.15),
+    transparent 45%),
+
+    linear-gradient(
+    135deg,
+    #050505 0%,
+    #120b1f 40%,
+    #24143a 100%);
+
     color:white;
     font-family:'Poppins',sans-serif;
 }
 
 .container{
+    width:80%;
+    max-width:700px;
+
+    margin:60px auto;
+
     text-align:center;
-    margin-top:60px;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    box-shadow:0 0 35px rgba(181,126,220,0.25);
 }
 
 h1{
@@ -27,10 +60,6 @@ p{
     font-size:20px;
 }
 
-.cake{
-    font-size:130px;
-    margin:30px;
-}
 
 button{
     background:#b57edc;
@@ -43,7 +72,13 @@ button{
 }
 
 button:hover{
+
     background:#d8b4ff;
+
+    transform:scale(1.08);
+
+    box-shadow:0 0 25px #d8b4ff;
+
 }
 @keyframes float{
 
@@ -62,9 +97,10 @@ transform:translateY(0px);
 }
 
 .cake{
-font-size:130px;
-margin:30px;
-animation:float 2s infinite;
+    font-size:130px;
+    margin:30px;
+    animation:float 2s infinite;
+    text-shadow:0 0 25px #ffdf8c;
 }
 #birthdayContent{
     display:none;
