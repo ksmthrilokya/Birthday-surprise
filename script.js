@@ -37,11 +37,13 @@ function typeWriter(){
     }
 
 }
-function blowCandles() {
+function blowCandles(){
 
-    document.getElementById("flames").innerHTML = "💨 💨 💨";
+    document.getElementById("flames").innerHTML="💨 💨 💨";
 
-    document.getElementById("wishMessage").innerHTML =
+    document.getElementById("wishMessage").innerHTML=
     "✨ Make a Wish Raji... 💜";
+
+    startConfetti();
 
 }
