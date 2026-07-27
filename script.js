@@ -47,3 +47,8 @@ function blowCandles(){
     startConfetti();
 
 }
+function startConfetti(){
+
+    document.getElementById("wishMessage").innerHTML += "<br><br>🎊 🎉 ✨ 🎊 🎉";
+
+}
