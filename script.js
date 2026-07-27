@@ -37,3 +37,11 @@ function typeWriter(){
     }
 
 }
+function blowCandles() {
+
+    document.getElementById("flames").innerHTML = "💨 💨 💨";
+
+    document.getElementById("wishMessage").innerHTML =
+    "✨ Make a Wish Raji... 💜";
+
+}
