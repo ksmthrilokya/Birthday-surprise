@@ -134,3 +134,18 @@ animation:float 2s infinite;
     }
 
 }
+.cake-area{
+    margin:20px;
+}
+
+#flames{
+    font-size:35px;
+    margin-bottom:10px;
+}
+
+#wishMessage{
+    color:#d8b4ff;
+    font-size:22px;
+    min-height:30px;
+    font-weight:bold;
+}
