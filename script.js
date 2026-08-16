@@ -85,3 +85,10 @@ function startConfetti() {
 if (document.getElementById("confetti")) {
     startConfetti();
 }
+function playMusic() {
+
+    const music = document.getElementById("birthdayMusic");
+
+    music.play();
+
+}
