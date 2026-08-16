@@ -260,3 +260,18 @@ img:hover{
     left:50%;
     transform:translateX(-50%) rotate(-8deg);
 }
+.photo-frame{
+    display:inline-block;
+    position:relative;
+}
+
+.photo-frame::before{
+    content:"";
+    width:100px;
+    height:25px;
+    background:rgba(255,255,255,0.4);
+    position:absolute;
+    top:-12px;
+    left:50%;
+    transform:translateX(-50%) rotate(-8deg);
+}
