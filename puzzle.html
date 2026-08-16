@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Little Puzzle 🧩</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🧩 One Little Puzzle</h1>
+
+    <p>Before you see the letter...</p>
+
+    <h2>What is my favourite memory with you? 💜</h2>
+
+    <button onclick="checkAnswer('A')">
+        📸 Our Favourite Photo
+    </button>
+
+    <br><br>
+
+    <button onclick="checkAnswer('B')">
+        🎂 Your Birthday
+    </button>
+
+    <br><br>
+
+    <button onclick="checkAnswer('C')">
+        🎬 Watching a Movie
+    </button>
+
+    <p id="puzzleMessage"></p>
+
+</div>
+
+<script>
+
+function checkAnswer(answer) {
+
+    if (answer === 'A') {
+
+        document.getElementById("puzzleMessage").innerHTML =
+        "🎉 Correct! You remembered! 💜";
+
+        setTimeout(function(){
+
+            window.location.href = "letter.html";
+
+        }, 2000);
+
+    } else {
+
+        document.getElementById("puzzleMessage").innerHTML =
+        "😂 Nope! Try again!";
+
+    }
+
+}
+
+</script>
+
+</body>
+
+</html>
