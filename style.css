@@ -275,3 +275,24 @@ img:hover{
     left:50%;
     transform:translateX(-50%) rotate(-8deg);
 }
+.letter-box{
+    max-width:600px;
+    margin:30px auto;
+    padding:35px;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(216,180,255,0.3);
+    border-radius:20px;
+    box-shadow:0 0 30px rgba(181,126,220,0.2);
+}
+
+.letter-box p{
+    line-height:1.8;
+    font-size:18px;
+}
+
+.signature{
+    color:#d8b4ff;
+    font-family:'Great Vibes',cursive;
+    font-size:30px !important;
+    margin-top:30px;
+}
