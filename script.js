@@ -52,3 +52,36 @@ function startConfetti(){
     document.getElementById("wishMessage").innerHTML += "<br><br>🎊 🎉 ✨ 🎊 🎉";
 
 }
+function startConfetti() {
+
+    const confetti = document.getElementById("confetti");
+
+    if (!confetti) return;
+
+    const emojis = ["💜", "✨", "🎉", "💖", "🌸"];
+
+    for (let i = 0; i < 40; i++) {
+
+        const piece = document.createElement("span");
+
+        piece.innerHTML =
+            emojis[Math.floor(Math.random() * emojis.length)];
+
+        piece.style.position = "fixed";
+        piece.style.left = Math.random() * 100 + "%";
+        piece.style.top = "-30px";
+        piece.style.fontSize = "25px";
+        piece.style.zIndex = "9999";
+        piece.style.animation = "fall 4s linear forwards";
+
+        confetti.appendChild(piece);
+
+        setTimeout(() => {
+            piece.remove();
+        }, 4000);
+    }
+}
+
+if (document.getElementById("confetti")) {
+    startConfetti();
+}
