@@ -82,18 +82,14 @@ function startConfetti() {
         }, 4000);
     }
 }
-
-if (document.getElementById("confetti")) {
-    startConfetti();
-}
-function playMusic() {
+window.addEventListener("load", function(){
 
     const music = document.getElementById("birthdayMusic");
 
-    music.play();
+    if(music && localStorage.getItem("playMusic") === "yes"){
+        music.play().catch(function(){
+            console.log("Autoplay blocked by browser");
+        });
+    }
 
-}
-function playMusic() {
-    const music = document.getElementById("birthdayMusic");
-    music.play();
-}
+});
