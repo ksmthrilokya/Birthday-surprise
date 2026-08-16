@@ -358,3 +358,67 @@ img:hover{
         opacity: 0;
     }
 }
+/* 📱 Mobile Responsive Design */
+
+@media (max-width: 600px){
+
+    .container{
+        width:85%;
+        margin:30px auto;
+        padding:25px 15px;
+        box-sizing:border-box;
+    }
+
+    h1,
+    #welcome{
+        font-size:45px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    p{
+        font-size:16px;
+    }
+
+    .cake{
+        font-size:90px;
+        margin:20px;
+    }
+
+    .final-cake{
+        font-size:100px;
+    }
+
+    button{
+        width:85%;
+        max-width:300px;
+        padding:13px 20px;
+        font-size:16px;
+    }
+
+    .photo-frame img{
+        width:100%;
+        max-width:280px;
+        height:auto;
+    }
+
+    .letter-box{
+        padding:20px 15px;
+    }
+
+    .letter-box p{
+        font-size:16px;
+        line-height:1.7;
+    }
+
+    .memory{
+        font-size:30px;
+    }
+
+    .balloons span{
+        font-size:35px;
+    }
+
+}
