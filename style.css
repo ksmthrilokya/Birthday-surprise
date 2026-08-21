@@ -422,34 +422,103 @@ img:hover{
     }
 
 }
-.photo-gallery{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:25px;
-    margin:30px 0;
+.photo-stack{
+    position:relative;
+    width:300px;
+    height:390px;
+    margin:50px auto 20px;
 }
 
-.photo-frame{
-    background:white;
+.stack-photo{
+    position:absolute;
+    width:280px;
+    height:360px;
+
+    left:10px;
+    top:10px;
+
     padding:10px;
-    width:220px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.4);
-    transform:rotate(-2deg);
-    transition:0.3s;
+    background:white;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.5);
+
+    cursor:pointer;
+
+    transition:
+        transform 0.8s ease,
+        opacity 0.8s ease;
 }
 
-.photo-frame:nth-child(even){
-    transform:rotate(2deg);
-}
-
-.photo-frame:hover{
-    transform:scale(1.08) rotate(0deg);
-}
-
-.photo-frame img{
+.stack-photo img{
     width:100%;
-    height:220px;
+    height:100%;
     object-fit:cover;
     display:block;
+}
+
+/* Different scrapbook angles */
+
+.stack-photo:nth-child(1){
+    transform:rotate(-5deg);
+    z-index:10;
+}
+
+.stack-photo:nth-child(2){
+    transform:rotate(4deg);
+    z-index:9;
+}
+
+.stack-photo:nth-child(3){
+    transform:rotate(-3deg);
+    z-index:8;
+}
+
+.stack-photo:nth-child(4){
+    transform:rotate(6deg);
+    z-index:7;
+}
+
+.stack-photo:nth-child(5){
+    transform:rotate(-6deg);
+    z-index:6;
+}
+
+.stack-photo:nth-child(6){
+    transform:rotate(3deg);
+    z-index:5;
+}
+
+.stack-photo:nth-child(7){
+    transform:rotate(-4deg);
+    z-index:4;
+}
+
+.stack-photo:nth-child(8){
+    transform:rotate(5deg);
+    z-index:3;
+}
+
+.stack-photo:nth-child(9){
+    transform:rotate(-2deg);
+    z-index:2;
+}
+
+.stack-photo:nth-child(10){
+    transform:rotate(4deg);
+    z-index:1;
+}
+
+/* Photo flies away */
+
+.stack-photo.revealed{
+    transform:translateX(380px) rotate(25deg) !important;
+    opacity:0;
+    pointer-events:none;
+}
+
+.stack-hint{
+    text-align:center;
+    color:#d8b4ff;
+    font-size:16px;
+    margin-top:20px;
 }
