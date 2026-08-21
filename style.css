@@ -522,3 +522,20 @@ img:hover{
     font-size:16px;
     margin-top:20px;
 }
+@media (max-width:600px){
+
+    .photo-stack{
+        width:280px;
+        height:360px;
+    }
+
+    .stack-photo{
+        width:250px;
+        height:320px;
+    }
+
+    .stack-photo.revealed{
+        transform:translateX(250px) rotate(25deg) !important;
+    }
+
+}
