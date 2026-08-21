@@ -93,3 +93,14 @@ window.addEventListener("load", function(){
     }
 
 });
+const stackPhotos = document.querySelectorAll(".stack-photo");
+
+stackPhotos.forEach(function(photo){
+
+    photo.addEventListener("click", function(){
+
+        photo.classList.add("revealed");
+
+    });
+
+});
